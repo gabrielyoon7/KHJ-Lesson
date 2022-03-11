@@ -6,5 +6,23 @@ public class Main {
         double doubleValue = 1.2;
         boolean isValid = false;
         System.out.println("출력하고싶은 말");
+
+        // static 메소드에 접근
+        staticDan(5);
+
+        // main 객체 메소드에 접근
+        Main main = new Main();
+        main.dan(9);
     }
+
+    private void dan(int num) {
+        System.out.println(num+"단");
+    }
+
+    public static void staticDan(int num){
+        System.out.println(num+"단");
+    }
+
+
+
 }
