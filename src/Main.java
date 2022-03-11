@@ -13,6 +13,18 @@ public class Main {
         // main 객체 메소드에 접근
         Main main = new Main();
         main.dan(9);
+
+        // 주석
+        // 쓰는 법1
+
+
+        /*
+        * 주석 쓰는 법2
+        * */
+
+        /**
+         * 주석 쓰는 법 3
+         * */
     }
 
     private void dan(int num) {
