@@ -1,40 +1,28 @@
+import fifa.FifaManager;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        int num = 1;
-        String name = "김휘재";
-        double doubleValue = 1.2;
-        boolean isValid = false;
-        System.out.println("출력하고싶은 말");
-
-        // static 메소드에 접근
-        staticDan(5);
-
-        // main 객체 메소드에 접근
+        System.out.println("김휘재 과외용 자바 실습 프로그램");
         Main main = new Main();
-        main.dan(9);
-
-        // 주석
-        // 쓰는 법1
-
-
-        /*
-        * 주석 쓰는 법2
-        * */
-
-        /**
-         * 주석 쓰는 법 3
-         * */
+        main.run();
     }
 
-    private void dan(int num) {
-        System.out.println(num+"단");
+    public void run() {
+        System.out.println("어떤 프로그램을 실행할까요? 1: 피파 선수 관리 프로그램");
+        Scanner scanner = new Scanner(System.in);
+        int menu = scanner.nextInt();
+        switch(menu){
+            case 1:
+                FifaManager fifaManager = new FifaManager();
+                fifaManager.run();
+                break;
+            default:
+                System.out.println("잘못된 입력입니다.");
+                break;
+        }
     }
-
-    public static void staticDan(int num){
-        System.out.println(num+"단");
-    }
-
 
 
 }
