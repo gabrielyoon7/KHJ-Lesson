@@ -2,15 +2,15 @@ import fifa.FifaManager;
 
 import java.util.Scanner;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         System.out.println("*****************************");
         System.out.println("*김휘재 과외용 자바 실습 프로그램*");
         System.out.println("*****************************");
         System.out.println();
         System.out.println();
-        Main main = new Main();
-        main.run();
+        App app = new App();
+        app.run();
     }
 
     public void run() {
