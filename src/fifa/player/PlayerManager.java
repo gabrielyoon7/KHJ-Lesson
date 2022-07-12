@@ -29,4 +29,11 @@ public class PlayerManager {
         players.add(player);
     }
 
+    public void searchPlayer(){
+        System.out.println("검색하실 선수 이름을 입력하세요..");
+        String keyword = scanner.next();
+        System.out.println(keyword+"를 검색합니다.");
+        //검색하는 로직
+    }
+
 }
