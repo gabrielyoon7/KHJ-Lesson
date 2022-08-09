@@ -36,7 +36,7 @@ public class FifaManager {
                     playerManager.readPlayer();
                     break;
                 case 3:
-                    System.out.println("선수 검색하기");
+                    playerManager.searchPlayer();
                     break;
                 default:
                     System.out.println("잘못된 입력입니다.");
